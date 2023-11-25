@@ -109,18 +109,6 @@ fun AlignYourBodyElement(
     }
 }
 
-@Preview(showBackground = true, backgroundColor = 0xFFF5F0EE),
-@Composable
-fun AlignYourBodyElementPreview() {
-    MySootheTheme {
-        AlignYourBodyElement(
-            text = R.string.ab1_inversions,
-            drawable = R.drawable.ab1_inversions,
-            modifier = Modifier.padding(8.dp)
-        )
-    }
-}
-
 // Step: Favorite collection card - Material Surface
 @Composable
 fun FavoriteCollectionCard(
@@ -223,6 +211,8 @@ fun SearchBarPreview() {
 fun AlignYourBodyElementPreview() {
     MySootheTheme {
         AlignYourBodyElement(
+            text = R.string.ab1_inversions,
+            drawable = R.drawable.ab1_inversions,
             modifier = Modifier.padding(8.dp)
         )
     }
